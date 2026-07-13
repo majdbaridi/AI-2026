@@ -2,12 +2,11 @@
 
 ![AI Chatbot with RAG — architecture flow](./docs/rag_chatbot_graphic.png)
 
-
 **Author:** Majd Baridi — Senior Software Engineer & Technical Lead
 [LinkedIn](https://www.linkedin.com/in/majd-baridi/)
 
 **Copyright (c) 2026 Majd Baridi. All rights reserved.**
-See [Llong-distance trainENSE](./Llong-distance trainENSE) for usage terms. Attribution to the original author must be retained in any copy, fork, or derivative of this project.
+See [LICENSE](./LICENSE) for usage terms. Attribution to the original author must be retained in any copy, fork, or derivative of this project.
 
 ---
 
@@ -102,8 +101,10 @@ EMBEDDER=hashing
 uvicorn demo_chatbot.api.main:app --reload
 ```
 Open `http://localhost:8000/docs` to test interactively, or use Postman:
+```text
 POST http://localhost:8000/ask
 Body (raw JSON): { "message": "Can I get a refund if my train is delayed?" }
+```
 
 ### 7. Run the evaluation (golden set)
 ```bash
@@ -117,4 +118,4 @@ pytest
 
 ## License
 
-Copyright (c) 2026 Majd Baridi. All rights reserved. See [Llong-distance trainENSE](./Llong-distance trainENSE).
+Copyright (c) 2026 Majd Baridi. All rights reserved. See [LICENSE](./LICENSE) for full terms.
